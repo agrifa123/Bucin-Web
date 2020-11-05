@@ -7,13 +7,13 @@ const variables = {
     night: "Good Night",
   },
   quotes: [
-    { quote: "I love you.", author: "Niken" },
-    { quote: "I love you.", author: "Niken" },
-    { quote: "Aku sayang kamu!", author: "Niken" },
+    { quote: "I love you.", author: "Sayang" },
+    { quote: "I love you.", author: "Sayang" },
+    { quote: "Aku sayang kamu!", author: "Sayang" },
     { quote: "Semoga harimu menyenangkan ♥", author: "Sayang" },
-    { quote: "Love You", author: "Niken 😊" },
+    { quote: "Love You", author: "Sayang" },
   ],
-  nicknames: ["Niken", "Niken", "Sayang", "Sayangku", "Cintaku", "Cinta"],
+  nicknames: ["Sayang", "Sayangku", "Cintaku", "Cinta"],
   generated: ["{greetings}, {nicknames}!"],
 };
 
