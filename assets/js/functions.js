@@ -32,3 +32,32 @@ const generateTypeIt = (el, speed, cursor, arr) => {
 }
 
 const getMode = (time) => (time == "afternoon" || time == "night" || time == "evening") ? "darkBG" : "lightBG";
+function playAudio() {
+        var source = "Instrumen romantis.mp3";
+        var audio = document.createElement("audio");
+        audio.autoplay = true;
+        audio.loop = true;
+        audio.controls = true;
+        audio.load();
+        audio.addEventListener("load", function() {   audio.loop();
+            audio.play();
+            audio.controls();
+        }, true);
+            
+        audio.src = source;
+
+    }
+
+    function audio() {
+        $.ajax({url: "http://url/to/audiomusik", 
+                success: function(totnotif) {
+    
+                if (totnotif > 0) {
+                    //play sound
+                    playAudio();
+                }
+    
+                setTimeout(function(){ cekNotifikasi();}, 60000);//60 detik
+            }
+        });
+    }
